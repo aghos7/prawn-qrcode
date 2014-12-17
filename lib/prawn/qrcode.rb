@@ -50,7 +50,7 @@ module QRCode
     begin
       version +=1
       qr_code = RQRCode::QRCode.new(content, :size => version, :level=> level)
-      render_qr_code(qr_code)
+      render_qr_code(qr_code, options)
     rescue RQRCode::QRCodeRunTimeError
       if version <40
         retry
