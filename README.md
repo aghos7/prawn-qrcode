@@ -2,8 +2,10 @@
 
 A simple extension to generate and/or render QRCodes for Prawn PDFs
 
-![TravisCI Build state](https://travis-ci.org/jabbrwcky/prawn-qrcode.svg?branch=master)
+![TravisCI Build state](https://travis-ci.org/aghos7/prawn-qrcode.svg?branch=master)
+<!---
 [![Gem Version](https://badge.fury.io/rb/prawn-qrcode.svg)](http://badge.fury.io/rb/prawn-qrcode)
+-->
 
 Prawn/QRCode is a Prawn (>= 0.11.1) extension to simplify rendering of QR Codes*.
 
@@ -21,7 +23,7 @@ $ gem install prawn-qrcode
 ```ruby
 require 'prawn/qrcode'
 
-qrcode_content = "http://github.com/jabbrwcky/prawn-qrcode"
+qrcode_content = "http://github.com/aghos7/prawn-qrcode"
 qrcode = RQRCode::QRCode.new(qrcode_content, :level=>:h, :size => 5)
 
 # Render a prepared QRCode at he cursor position
@@ -73,4 +75,7 @@ Fixed default stroke and explicit conversion of extents to floats.
 
 ### 0.2.2.1
 Stroke param broken. Replaced with simpler evaluation.
+
+### 0.2.2.2
+Initial rewrite
 
