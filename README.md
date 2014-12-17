@@ -2,8 +2,8 @@
 
 A simple extension to generate and/or render QRCodes for Prawn PDFs
 
-![TravisCI Build state](https://travis-ci.org/aghos7/prawn-qrcode.svg?branch=master)
 <!---
+![TravisCI Build state](https://travis-ci.org/aghos7/prawn-qrcode.svg?branch=master)
 [![Gem Version](https://badge.fury.io/rb/prawn-qrcode.svg)](http://badge.fury.io/rb/prawn-qrcode)
 -->
 
