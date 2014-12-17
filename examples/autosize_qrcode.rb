@@ -18,21 +18,21 @@ require_relative '../lib/prawn/qrcode'
 
 qrcode = 'https://github.com/jabbrwcky/prawn-qrcode'
 
-Prawn::Document::new(:page_size => "A4") do
+# Prawn::Document::new(:page_size => "A4") do
 
-  text "Sample autosized QR-Code (with stroked bounds) Size of QRCode : 1 in (72 pt)"
-  print_qr_code(qrcode, :extent=>72)
-  move_down 20
+#   text "Sample autosized QR-Code (with stroked bounds) Size of QRCode : 1 in (72 pt)"
+#   print_qr_code(qrcode, :extent=>72)
+#   move_down 20
 
-  text "Sample autosized QR-Code (with and without stroked bounds) Size of QRCode : 2 in (144 pt)"
-  cpos = cursor
-  print_qr_code(qrcode, :extent=>144)
-  print_qr_code(qrcode, :pos=>[150,cpos], :extent=>144, :stroke=>false)
-  move_down 10
+#   text "Sample autosized QR-Code (with and without stroked bounds) Size of QRCode : 2 in (144 pt)"
+#   cpos = cursor
+#   print_qr_code(qrcode, :extent=>144)
+#   print_qr_code(qrcode, :pos=>[150,cpos], :extent=>144, :stroke=>false)
+#   move_down 10
 
-  text "Sample autosized QR-Code (with stroked bounds) Size of QRCode :10 cm"
-  print_qr_code(qrcode, :extent=>10.send(:cm), :stroke=>true, :level=>:q)
-  move_down 10
-  text "Quite huge, isn't it?'"
-  render_file("autosized.pdf")
-end
+#   text "Sample autosized QR-Code (with stroked bounds) Size of QRCode :10 cm"
+#   print_qr_code(qrcode, :extent=>10.send(:cm), :stroke=>true, :level=>:q)
+#   move_down 10
+#   text "Quite huge, isn't it?'"
+#   render_file("autosized.pdf")
+# end
